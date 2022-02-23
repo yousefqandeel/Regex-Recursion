@@ -2,13 +2,15 @@
 
 // **(Q1)
 function capitalA(s) {
+    let t = true;
+    let f = false;
     let result = s;
     let regex = /^[ A-Za-z].*A$/;
     if (regex.test(result) == true) {
-        console.log("true");
+        return t;
     }
     else {
-        console.log("fales");
+        return f;
     }
 
 };
@@ -16,13 +18,15 @@ function capitalA(s) {
 
 // **(Q2)
 function ioEmail(email) {
+    let t = true;
+    let f = false;
     let valid = /\example@example\.io/;
     let string = email;
     if (email == "example@example.io") {
-        console.log("true");
+        return t;
     }
     else {
-        console.log("False")
+        return f;
     }
 };
 
@@ -32,5 +36,5 @@ function imagesSearcher(text) {
     let string = text;
     let valid = /\w\w\w.(jpg|jpeg|png)/g;
     let result = string.match(valid)
-    console.log(result);
+    return result;
 }
